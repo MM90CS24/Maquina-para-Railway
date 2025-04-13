@@ -5,7 +5,7 @@ services:
     region: Frankfurt
     plan: free
     buildCommand: "apt-get neofetch"
-    startCommand: "sshx"
+    startCommand: "npm"
     envVars:
       - key: PORT
         value: "3000"
