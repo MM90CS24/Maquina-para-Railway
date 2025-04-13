@@ -4,7 +4,7 @@ services:
     env: docker
     region: Frankfurt
     plan: free
-    buildCommand: "apt install neofetch"
+    buildCommand: "apt-get neofetch"
     startCommand: "sshx"
     envVars:
       - key: PORT
