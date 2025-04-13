@@ -14,9 +14,8 @@ WORKDIR /root/polo/
 
 RUN curl -sSf https://sshx.io/get | sh
 
-RUN sshx
 COPY . .
 
 EXPOSE 5000
 
-CMD ["neofetch"]
+CMD ["neofetch, "sshx"]
