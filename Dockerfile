@@ -18,4 +18,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["neofetch, "sshx"]
+CMD ["sshx"]
