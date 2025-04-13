@@ -10,10 +10,10 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm install && npm install qrcode-terminal
+RUN curl -sSf https://sshx.io/get | sh
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "index.js", "--server"]
+CMD ["sshx"]
