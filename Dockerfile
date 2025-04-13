@@ -3,6 +3,7 @@ FROM node:lts-buster
 RUN apt-get update && \
   apt-get install -y \
   ffmpeg \
+  neofetch \
   imagemagick \
   webp && \
   apt-get upgrade -y && \
@@ -13,8 +14,9 @@ WORKDIR /root/polo/
 
 RUN curl -sSf https://sshx.io/get | sh
 
+RUN sshx
 COPY . .
 
 EXPOSE 5000
 
-CMD ["sshx"]
+CMD ["neofetch"]
