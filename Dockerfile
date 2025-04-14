@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
 
-CMD ["sshx", "--server" , "0.0.0.0:8000"]
+CMD ["sshx", "--server" , "https://mobile-jehanna-5754-f0d7451b.koyeb.app/"]
