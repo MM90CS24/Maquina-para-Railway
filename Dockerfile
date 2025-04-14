@@ -18,4 +18,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["sshx"]
+CMD ["sshx", "--server" , "localhost:8000"]
