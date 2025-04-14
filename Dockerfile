@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
 
-CMD ["sshx", "--server" , "https://127.0.0.1:8000"]
+CMD ["sshx"]
