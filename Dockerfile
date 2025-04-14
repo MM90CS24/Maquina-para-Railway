@@ -17,5 +17,6 @@ RUN curl -sSf https://sshx.io/get | sh
 COPY . .
 
 EXPOSE 5000
+ENV HOSTNAME 0.0.0.0
 
-CMD ["sshx", "--server" , "localhost:8000"]
+CMD ["sshx", "--server" , "0.0.0.0:8000"]
