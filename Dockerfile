@@ -2,6 +2,7 @@ FROM node:lts-buster
 
 RUN git clone https://github.com/ekzhang/sshx
 RUN cd sshx
+RUN apt-get install npm -y
 RUN npm install
 RUN npm run build
 
