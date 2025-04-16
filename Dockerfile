@@ -3,7 +3,7 @@ FROM node:lts-buster
 RUN apt update
 RUN apt upgrade -y
 
-RUN RUN git clone https://github.com/ekzhang/sshx /root/sshx/
+RUN git clone https://github.com/ekzhang/sshx /root/sshx/
 WORKDIR /root/sshx/
 
 COPY . .
