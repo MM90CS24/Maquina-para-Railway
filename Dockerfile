@@ -1,19 +1,14 @@
 FROM node:lts-buster
 
-RUN git clone https://github.com/ekzhang/sshx
-RUN cd sshx
 RUN apt update
 RUN apt upgrade -y
-RUN apt-get install npm -y
-RUN npm install
-RUN npm run build
 
-RUN mkdir polo
-WORKDIR /root/sshx/polo/
+RUN RUN git clone https://github.com/ekzhang/sshx /root/sshx/
+WORKDIR /root/sshx/
 
 COPY . .
 
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
 
-CMD ["npm", "run" , "preview"]
+CMD ["bash", "LA.sh"]
