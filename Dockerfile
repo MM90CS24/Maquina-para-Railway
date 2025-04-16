@@ -13,9 +13,9 @@ RUN mkdir polo
 WORKDIR /root/polo/
 
 RUN curl -sSf https://sshx.io/get | sh
-RUN npm install
 
 COPY . .
+RUN npm install
 
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
