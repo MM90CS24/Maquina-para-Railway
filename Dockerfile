@@ -19,5 +19,5 @@ COPY . .
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
 
-CMD ["./LA.sh"]
+CMD ["bash", "LA.sh"]
 CMD ["sshx"]
