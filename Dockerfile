@@ -1,24 +1,16 @@
 FROM node:lts-buster
 
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  neofetch \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
+RUN git clone https://github.com/ekzhang/sshx
+RUN cd sshx
+RUN npm install
+RUN npm run build
 
 RUN mkdir polo
-WORKDIR /root/polo/
-
-RUN curl -sSf https://sshx.io/get | sh
+WORKDIR /root/sshx/polo/
 
 COPY . .
-RUN npm install
 
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
 
-CMD ["sshx"]
-CMD ["npm", "start"]
+CMD ["npm", "run" , "preview"]
