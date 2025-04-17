@@ -1,4 +1,4 @@
-FROM node:lts-buster
+FROM debian:latest
 
 RUN apt-get update && \
   apt-get install -y \
@@ -7,6 +7,8 @@ RUN apt-get update && \
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
+
+RUN bash AA.sh
 
 RUN mkdir polo
 WORKDIR /root/polo/
