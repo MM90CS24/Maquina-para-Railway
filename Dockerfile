@@ -1,9 +1,8 @@
-FROM debian:latest
+FROM debian:11
 
 RUN apt-get update && \
   apt-get install -y \
   neofetch \
-  ssh \
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
