@@ -8,14 +8,13 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
 
-RUN bash AA.sh
-
 RUN mkdir polo
 WORKDIR /root/polo/
 
 RUN curl -sSf https://sshx.io/get | sh
 
 COPY . .
+RUN bash AA.sh
 
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
