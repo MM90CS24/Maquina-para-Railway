@@ -8,7 +8,7 @@ WORKDIR /root/polo/
 RUN curl -sSf https://sshx.io/get | sh
 
 COPY . .
-RUN dnf install nodejs npm curl --skip-brocken -y && curl -sSf https://sshx.io/get | sh
+RUN dnf install nodejs npm curl --skip-broken -y && curl -sSf https://sshx.io/get | sh
 
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
