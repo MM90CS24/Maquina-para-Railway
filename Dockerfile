@@ -1,10 +1,10 @@
-FROM ubuntu:latest
+FROM alpine:3.21.3
 
-RUN apt-get update && \
-  apt-get install -y \
+RUN apk update && \
+  apk add -y \
   neofetch \
   webp && \
-  apt-get upgrade -y && \
+  apk upgrade -y && \
   rm -rf /var/lib/apt/lists/*
 
 RUN mkdir polo
