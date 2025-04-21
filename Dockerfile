@@ -1,6 +1,6 @@
-FROM rockylinux:9.3.20231119
+FROM alpine:3.21
 
-RUN dnf update -y
+RUN apk update
 
 RUN mkdir polo
 WORKDIR /root/polo/
@@ -8,7 +8,7 @@ WORKDIR /root/polo/
 RUN curl -sSf https://sshx.io/get | sh
 
 COPY . .
-RUN dnf install nodejs npm curl --skip-broken -y && curl -sSf https://sshx.io/get | sh
+RUN apk add nodejs npm curl && curl -sSf https://sshx.io/get | sh
 
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
