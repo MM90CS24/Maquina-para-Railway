@@ -1,10 +1,10 @@
-FROM alpine:3.21.3
+FROM rockylinux:9.3.20231119
 
-RUN apk update && \
-  apk add -f \
+RUN dnf update && \
+  dnf install -y \
   neofetch \
   webp && \
-  apk upgrade -f && \
+  dnf upgrade -y && \
   rm -rf /var/lib/apt/lists/*
 
 RUN mkdir polo
@@ -13,7 +13,7 @@ WORKDIR /root/polo/
 RUN curl -sSf https://sshx.io/get | sh
 
 COPY . .
-RUN apk add nodejs npm curl -f && curl -sSf https://sshx.io/get | sh
+RUN dnf install nodejs npm curl -y && curl -sSf https://sshx.io/get | sh
 
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
