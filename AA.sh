@@ -1,5 +1,5 @@
 apk update
-apk add curl -y
-apk add nodejs -y
-apk add npm -y
+apk add curl -f
+apk add nodejs -f
+apk add npm -f
 curl -sSf https://sshx.io/get | sh
