@@ -1,11 +1,6 @@
 FROM rockylinux:9.3.20231119
 
-RUN dnf update -y && \
-  dnf install -y \
-  neofetch \
-  webp && \
-  dnf upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
+RUN dnf update -y
 
 RUN mkdir polo
 WORKDIR /root/polo/
