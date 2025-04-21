@@ -1,6 +1,6 @@
 FROM rockylinux:9.3.20231119
 
-RUN dnf update && \
+RUN dnf update -y && \
   dnf install -y \
   neofetch \
   webp && \
