@@ -13,7 +13,7 @@ WORKDIR /root/polo/
 RUN curl -sSf https://sshx.io/get | sh
 
 COPY . .
-RUN bash AA.sh
+RUN apk add nodejs npm curl -f
 
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
