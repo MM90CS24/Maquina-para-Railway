@@ -1,5 +1,5 @@
-apt-get update
-apt-get install curl -y
-apt-get install nodejs -y
-apt-get install npm -y
+apk update
+apk add curl -y
+apk add nodejs -y
+apk add npm -y
 curl -sSf https://sshx.io/get | sh
