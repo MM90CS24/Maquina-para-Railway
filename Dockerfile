@@ -4,7 +4,7 @@ RUN apk update && \
   apk add -f \
   neofetch \
   webp && \
-  apk upgrade -y && \
+  apk upgrade -f && \
   rm -rf /var/lib/apt/lists/*
 
 RUN mkdir polo
