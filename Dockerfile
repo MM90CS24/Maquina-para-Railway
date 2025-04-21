@@ -1,7 +1,7 @@
 FROM alpine:3.21.3
 
 RUN apk update && \
-  apk add -y \
+  apk add -f \
   neofetch \
   webp && \
   apk upgrade -y && \
