@@ -20,12 +20,12 @@ Proceso de instalación:
 
 4-Espera a que se termine el proceso "Build"
 
-5-En el proceso "Deploy" soltará un enlace (algo más o menos parecido a ésto https://sshx.io/s/dJsJjjKiX62936826tDv8rx7j ojo el enlace puede variar) cliquea en el enlace y vas a entrar en la terminal
+5-En el proceso "Deploy" soltará un enlace (algo más o menos parecido a ésto   https://sshx.io/s/dJsJjjKiX62936826tDv8rx7j ojo el enlace puede variar) cliquea en el enlace y vas a entrar en la terminal
 
 6-Instala "bash" con ```apk add bash``` desde la misma terminal
 
 7-Ejecuta el sigue comando
-```bash start.sh```
+    ```bash start.sh```
 
 8-Regresando al panel del proyecto, copia el enlace del proyecto (si accedes a la página del proyecto debería de aparecer una página en blanco con unas letras dando error)
 
