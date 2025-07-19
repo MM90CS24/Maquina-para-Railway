@@ -1,6 +1,6 @@
-#El presente repositorio crea una máquina virtual (VPS) la cual se accede mediante terminal web por sshx
+El presente repositorio crea una máquina virtual (VPS) la cual se accede mediante terminal web por sshx
 
-##ACLARO QUE LAS ACCIONES QUE HAGA CON LA MÁQUINA CREADA A PARTIR DE ESTE REPOSITORIO NO ES DE MI RESPONSABILIDAD, EL QUE DECIDE SI QUIERE INTENTAR COSAS MALAS ES USTED Y USTED MISMO SE HACE RESPONSABLE
+ACLARO QUE LAS ACCIONES QUE HAGA CON LA MÁQUINA CREADA A PARTIR DE ESTE REPOSITORIO NO ES DE MI RESPONSABILIDAD, EL QUE DECIDE SI QUIERE INTENTAR COSAS MALAS ES USTED Y USTED MISMO SE HACE RESPONSABLE
 
 Nota aclaratoria antes de la instalación:
 
