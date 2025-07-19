@@ -24,8 +24,7 @@ Proceso de instalación:
 
 6-Instala "bash" con ```apk add bash``` desde la misma terminal
 
-7-Ejecuta el sigue comando 
-
+7-Ejecuta el sigue comando
 ```bash start.sh```
 
 8-Regresando al panel del proyecto, copia el enlace del proyecto (si accedes a la página del proyecto debería de aparecer una página en blanco con unas letras dando error)
