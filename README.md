@@ -10,6 +10,11 @@ Nota aclaratoria antes de la instalación:
 
 3-Sistema operativo alphine (usted si quiere puede cambiar el sistema por el archivo "Dockerfile", obviamente además de otros parámetros) (es recomendable tener alphine, evita la sobrecarga en los procesos)
 
+4-Recomendable para tan solo montar Bots
+
+5-Si te ha servido me puedes dar una estrella? :D
+
+
 Proceso de instalación:
 
 1-Has un "fork" de este repositorio
