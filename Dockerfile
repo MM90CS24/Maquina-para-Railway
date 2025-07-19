@@ -5,8 +5,6 @@ RUN apk update
 RUN mkdir polo
 WORKDIR /root/polo/
 
-RUN curl -sSf https://sshx.io/get | sh
-
 COPY . .
 RUN apk add nodejs npm curl && curl -sSf https://sshx.io/get | sh
 
