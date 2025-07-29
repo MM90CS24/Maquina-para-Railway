@@ -6,7 +6,7 @@ RUN mkdir polo
 WORKDIR /root/polo/
 
 COPY . .
-RUN apk update && apk add nodejs curl npm git bash && curl -sSf https://sshx.io/get | sh
+RUN apk add nodejs curl npm git bash && curl -sSf https://sshx.io/get | sh
 
 EXPOSE 5000
 ENV HOSTNAME 0.0.0.0
